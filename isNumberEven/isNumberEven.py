@@ -4,5 +4,14 @@ def isEven(num: int):
     
     return not isEven(num-1)
 
-for i in range(5):
-    print(i, isEven(i))
+
+def isNumberEven(num: int):
+    even = True
+    for _ in range(num):
+        even = not even
+    
+    return even
+
+
+for i in range(6):
+    print(i, isNumberEven(i))
